@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { fetchItems,checkItem } from "../actions/checkAction";
 
@@ -55,12 +54,6 @@ class LeftComponents extends Component {
     );
   }
 }
-
-// LeftComponents.prototypes = {
-//   fetchPosts: PropTypes.func.isRequired,
-//   posts: PropTypes.array.isRequired,
-//   newPost: PropTypes.object
-// };
 
 const mapStateToProps = state => ({
   items: state.items.items,
